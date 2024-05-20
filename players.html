@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Website</title>
+    <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
+
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- tailwind custom class -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'body-color': '#071952',
+                    'btn-color': '#75C2F6',
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .background {
+        background-image: url(images/background2.jpg);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+</style>
+
+<body class="font-poppins bg-body-color">
+    <!-- header section -->
+    <header>
+        <!-- nav section -->
+        <nav class="mx-5">
+            <div class="navbar bg-white container mx-auto rounded-3xl shadow-2xl flex justify-between">
+                <div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="clubs.html">Clubs</a></li>
+                            <li><a href="win.html">World Cup 2023</a></li>
+                            <li><a href="up-video.html">Upcoming Matches</a></li>
+                            <li><a>Players</a></li>
+                            <li>
+                                <div class="btn flex bg-body-color border-0 w-28">
+                                    <img class="w-5" src="images/Social Icons/login.png" alt="">
+                                    <p class="text-white font-bold bg-">Login</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl"><img class="w-36" src="images/Logo.png" alt=""></a>
+                </div>
+
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="clubs.html">Clubs</a></li>
+                        <li><a href="win.html">World Cup 2023</a></li>
+                        <li><a href="up-video.html">Upcoming Matches</a></li>
+                        <li><a href="players.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:mx-5 hidden lg:block">
+                    <div class="btn flex bg-body-color border-0 w-28">
+                        <img class="w-5" src="images/Social Icons/login.png" alt="">
+                        <p class="text-white font-bold bg-">Login</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- banner section -->
+        <section class="mx-5">
+            <div class="container mx-auto">
+                <div class="flex justify-between flex-col lg:flex-row">
+                    <div class=" lg:py-44 py-24">
+                        <h1 class="text-5xl lg:text-7xl font-bold text-center lg:text-start text-white">Asia   CUP  2023/2024<br>
+                            
+                            </h1>
+                        <p class="py-6 text-white text-center lg:text-start">Turnir AFC tomonidan 2024-yilgi yozgi Olimpiya oʻyinlarining erkaklar oʻrtasidagi futbol turniriga saralash bosqichi vazifasini oʻtaydi. Turnirning eng yaxshi uchta jamoasi AFC vakillari sifatida Frantsiyadagi Olimpiadaga yoʻllanma oladi, toʻrtinchi eng yaxshi jamoa esa saralash uchun AFC-CAF pley-off oʻyinini oʻtkazadi[3]. Turnirda jami 16 ta jamoa kurash olib boradi[4]</p>
+                        <div class="flex justify-center lg:justify-start">
+                            <div class="btn bg-btn-color border-0 w-44">
+                                <p class="text-white font-bold">Watch Live</p>
+                                <img class="w-5" src="images/Social Icons/login" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                        <img src="images/players/Uzb.jpg" class="lg:max-w-3xl lg:mt-16" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- main section -->
+    <main>
+        <!-- card section -->
+        <section class="mx-5">
+            <div class="container mx-auto mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- card-1 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/uzb.jpeg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Abbosbeks</h2>
+                        <p>Abbosbek Fayzullaev (2003-yil 3-oktabrda tugʻilgan) – oʻzbek futbolchisi, SSKA Moskva klubi va Oʻzbekiston U23 futbol terma jamoasi yarimhimoyachisi[1][2]. U 2023-yil dunyoning eng yaxshi yosh futbolchisi nomiga daʼvogarlar roʻyxatiga kirgan futbolchilardan biri[3].</p>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Eldor.jpeg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Eldor Shomurodov</h2>
+                        <p>Eldor Azamat oʻgʻli Shomurodov (1995-yil 29-iyunda; Jarqoʻrgʻon, Surxondaryo viloyati, Oʻzbekiston) — oʻzbek futbolchisi, hujumchi, Italiya A seriyasining „Cagliari“ klubi hamda Oʻzbekiston milliy terma jamoasi futbolchisi.</p>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Hojimat-2.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Hojmat Erkinov </h2>
+                        <p>Hojimat Botirovich Erkinov (oʻzbekcha: Ҳожимат Ботир ўғли Эркинов; 2001-yil 29-mayda tugʻilgan) – oʻzbek futbolchisi, Abu-Dabining „Al-Vahda“ klubi va Oʻzbekiston milliy futbol terma jamoasi yarim himoyachisi.</p>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Abduqodir.jpeg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Abduqodir Husanov </h2>
+                        <p>2022-yil mart oyida u Energetik-BDUga koʻchib oʻtdi[2][3]. Futbolchi „45“ raqamini oldi. U klubdagi debyutini 2022-yil 19-mart kuni Vitebskga qarshi oʻyinda oʻtkazdi, u yerda futbolchining oʻzi asosiy tarkibda maydonga tushdi va butun oʻyinni oʻtkazdi.[4][5] U oʻzining ilk golini 2022-yilning 2-mayida Neman Grodnoga qarshi oʻyinda kiritgan va u erda ham 2 ta golli uzatma bergan.[6] 2022-yil 29-may kuni „Slaviya Mozir“ga qarshi oʻyinda u birinchi golini penaltidan kiritdi.[7][8] 2022-yil avgust oyida u Xalqaro sport tadqiqotlari markazi[9] maʼlumotlariga koʻra dunyoning eng istiqbolli futbolchilari roʻyxatiga kiritildi[10]. 2022-yilning dekabr oyida klub futbolchining klubda oʻynashda davom etishini eʼlon qildi.[11]</p>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Aziz.jpg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Aziz G`aniyev </h2>
+                        <p>Oʻzbekiston sharqidagi Jizzaxda tugʻilgan Aziz Gʻaniyev „Nasaf“ jamoasi yoshlar boʻlimidan 2014-yilgi mavsum yakunida asosiy tarkibga koʻtarilgan.[2] 7-oktabr kuni (26-tur) u Oʻzbekiston chempionatidagi debyutini „Olmaliq“ga qarshi oʻyinda (2:2) oʻtkazdi va 88-daqiqada Odiljon Hamrobekov oʻrniga zaxiradan maydonga tushdi. Bu missiya uning joriy mavsumdagi yagona vazifasi edi  va keyingi mavsumda, 2015-yilda yarim himoyachi toʻqqizta liga oʻyinida maydonga tushdi[3][2][2] 2016-yil dekabr oyi boshida Sankt-Peterburgning „Zenit“ klubi qiziqishlari haqida maʼlumot paydo boʻldi.[4]</p>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Jamshid.jpg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5"> Jamshid Iskandarov </h2>
+                        <p>Jamshid Iskanderov yoki Jamshid Iskandarov 1993-yili 16-oktyabrda Toshkent shahrida tugʻilgan. Toshkentning „Navbahor“ klubi va Oʻzbekiston milliy terma jamoasi tarkibida oʻynaydi, ampluasi yarim himoyachi. U FIFA U-20 Jahon chempionati 2013, AFC Osiyo kubogi 2015 saralash bosqichida hamda AFC Osiyo kubogi 2015 kabi yirik futbol musobaqalarida oʻynagan.[1][2]</p>
+                    </div>
+                </div>
+
+                <!-- card-7 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/Abduvohid Nematov.jpg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Abduvohid Nematov </h2>
+                        <p>Abduvohid Nematov (2001-yil 20-martda tugʻilgan) — oʻzbekistonlik futbolchi, „Nasaf“ va futbol boʻyicha Oʻzbekiston milliy terma jamoasida oʻynaydi.</p>
+                    </div>
+                </div>
+
+                <!-- card-8 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/2f89b4c712_diyor-kholmatov-uzb.webp" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Diyorbek Kholmatov </h2>
+                        <p>Диёр Холматов 2002 йилда туғилганида Оксана Чусовитина аллақачон Олимпия олтин медали, бир неча бор жаҳон чемпиони унвонлари ва бошқа қатор мукофотларни қўлга киритган эди.</p>
+                    </div>
+                </div>
+
+                <!-- card-9 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/91409605fefbce6913a4dd0dc8ecc01b.jpeg" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Husayn Norchayev </h2>
+                        <p>O'zbekistonlik Husayn Norchayev saralash bosqichidagi natijasini final bosqichida ham takrorlashni maqsad qilgan, hujumchi olti bor gol urgan. Saralash bosqichida raqib darvozasini ishg‘ol qilishda Norchayevdan keying o‘rinda iroqlik Ridha Fadil Mayali (4), Saudiya Arabistoni termasi a’zosi Abdulloh Radif (4) va kuvaytlik Salmon Muhammad (4)ni e’tirof etish mumkin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-white">
+        <div class="container mx-auto">
+            <div class="py-16">
+                <div class="flex justify-center py-10">
+                    <div class=" w-2/4">
+                        <img class="w-full" src="images/Logo.png" alt="">
+                    </div>
+                </div>
+                <ul class="flex justify-center gap-10">
+                    <li><img class="w-16" src="images/Social Icons/Instagram.png" alt=""></li>
+                    <li><img class="w-16" src="images/Social Icons/Twitter.png" alt=""></li>
+                    <li><img class="w-16" src="images/Social Icons/Youtube.png" alt=""></li>
+                </ul>
+                <p class="text-center p-10">Copyright © 2024 Football</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
